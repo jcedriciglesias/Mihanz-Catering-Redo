@@ -214,7 +214,26 @@ width: 90%;
 .btn-submit{
     margin: 25px;
 }
+/* Terms and condition */
 
+.modal-body{
+    overflow: scroll;
+    text-align: justify;
+}
+
+.modal-body p{
+    letter-spacing: .5px;
+}
+.modal-body i{
+    color: blue;
+}
+.modal-body ol{
+    text-indent: 5%;
+    margin: 5%;
+}
+.modal-body li{
+    margin: 20px;
+}
 
 
 /* Footer */
