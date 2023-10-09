@@ -7,6 +7,8 @@ main{
     display: flex;
     height: auto;
     flex-direction: column;
+    align-items: center;
+   
 }
 /* Navigation */
 .navbar-brand{
@@ -42,10 +44,8 @@ main{
 .Services-Container a:hover{
     font-size: 60px;
 }
-.Services-Container h1 {
-    margin-bottom: 100px;
-}
 .Services-Container ul{
+    margin-top: 100px;
     display: flex;
     list-style: none;
     width: 100%;
@@ -74,37 +74,146 @@ main{
 }
 
 /* sub-services container */
-.baptismal{
+/* Services*/
+.pre-made{
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-.baptismal ul{
+.pre-made ul{
 list-style: none;
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+align-items: center;
 flex-direction: column;
+width: 100%;
+padding: 0;
 }
-.baptismal ul
-.baptismal li{
-    height: 50vh;
-    width: 90vh;
-    border: solid 1px ;
+hr {
+    color:black;
+    width: 100%;
 }
-.baptismal a{
+.pre-made li{
+    height: auto;
+width: 100%;
+margin-bottom: 100px;
+}
+.title{
+    width: 100%;
+    height: 15vh;
+    background:lightgray;
+    border-bottom: solid 1px darkgray;
+}
 
+.pre-made a{
+text-decoration: none;
+}
+.pre-made a li h1{
+color: black;
+
+}
+.pre-made img{
+height: 70vh;
+box-shadow: 14px 14px 11px black ;
+}
+.pre-made p{
+    font-size: 1.5rem;
+    margin: 50px;
+}
+.pre-made img:hover{
+    box-shadow: 14px 14px 11px rgb(202, 49, 49) ;
+    color: rebeccapurple;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+.pre-made a h1:hover{
+    color: rebeccapurple;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+}
+/* Pre-made Form */
+.premade-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.premade-form ul{
+    width: 80%;
+
+}
+.premade-form li{
+    font-size: 1.25rem;
+    margin: 10px;
+}
+.premade-form img{
+    height: 70vh;
+}
+.premade-form p{
+    font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 
+/* form */
+.form-container a{
+    color: white;
+    text-decoration: none;
+    }
+.form-container{
+    display: flex;
+    width: 70%;
+    height: auto ;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: rgb(0 0 0 / 33%);
+    margin-bottom: 100px;
+    border-radius: 20px;
+    box-shadow: 11px 11px 10px black;
+}
+.form-container input{
+    font-size: 20px;
+    width: 50vh;
+}
+.form-container td{
 
+    font-size: 1.50rem;
+}
+.input-group-text{
+    font-size: 20px;
+}
+.form-container table{
+margin-bottom: 50px;
+width: 90%;
+}
+.form-container hr{
+width: 90%;
+}
+.form-container h1{
+    width: 90%;
+}
 
-
-
-
-
-
+/* menu selection */
+.menu-selection{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-selection table{
+    width: 90%;
+}
+.btn-position{
+    width: 100%;
+    display: flex;
+}
+.btn-submit{
+    margin: 25px;
+}
 
 
 
@@ -135,6 +244,16 @@ footer a{
 footer a:hover{
     color: yellowgreen;
 }
+@media (max-width: 500px){
+    .pre-made img{
+        height: 25vh;
+        box-shadow: 14px 14px 11px black ;
+        }
+        .pre-made p{
+            font-size: 1rem;
+            margin: 50px;
+        }
+}
 @media (max-width: 700px){
 
 .Services-Container ul{
@@ -148,12 +267,14 @@ footer a:hover{
 .Services-Container li{
     margin: 10%;
 }
-
-
-
-
-
-
+.pre-made img{
+    height: 30vh;
+    box-shadow: 14px 14px 11px black ;
+    }
+    .pre-made p{
+        font-size: 1.25rem;
+        margin: 50px;
+    }
 
     footer{
         background-color: black;

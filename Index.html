@@ -6,29 +6,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/Index.css">
     <title>Mihan'z Catering</title>
 </head>
-<main>
+<body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mihanz Catering</a>
+          <a class="navbar-brand" href="html/Index.html">Mihan'z Catering</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav nav-tabs ">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="html/Index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Services.html">Services</a>
+                  <a class="nav-link" href="html/Services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./html/Menu.html">Menu</a>
+                  <a class="nav-link" href="html/Menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./html/Themes.html">Themes</a>
+                    <a class="nav-link" href="html/Themes.html">Themes</a>
                   </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,60 +45,77 @@
           </div>
         </div>
       </nav>
+      <main>
       <!-- Landing Page -->
       <div class="landing_Page">
         <div class="filter">
 
       
-        <h1 class="display-1 ">Mihanz Catering Service</h1>
+        <h1 class="display-1 ">Mihan'z Catering Service</h1>
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary  btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-success  btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Log In
   </button>
 </div>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <!-- Authentication -->
-
+        <form action="">
         <div class="modal-body">
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" >
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
               </div>
         </div>
+     
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary">Sign up</button>
           <button type="submit" class="btn btn-primary">Log in</button>
 
         </div>
+      </form>
       </div>
     </div>
   </div>
     </div>
  
-    <!-- Mihanz Information -->
-    <div class="mihanz-info">
-        <h1>
-            Mihanz <br/> Catering 
-            <p id="p1">Since 2015</p>
-        
-        </h1>
-        <p id="p2">Mihanz Catering is a food service business that has been serving its clients for 8 years and continues, located at 181 Calderon St.Subic Baliwag ,Bulacan, San Rafael, Philippines, 3010. founded in 2015, the business started through Mr. Antonio Javier’s passion for cooking and his business partner Golando Masi saw it as an opportunity. He offered Antonio Javier, who happened to be his brother- in-law, to finance the business. Antonio agreed and the business started as a small canteen. As a fellow business minded, Mr. Antonio Javier already set his plans and aiming to make a catering which after years of hard work was finally achieved, the business was named after Mirai Javier “Mi” whom is Antonio’s daughter and Yohanz Masi who is the son of Golando both combined to form the now “Mihanz Catering”.</p>
+        <!-- Mihanz Information -->
+        <div class="mihanz-info">
+          <h1 class="display-5">
+              Mihan'z Catering 
+              <p id="p1">Since 2015</p>
+          
+          </h1>
+          <p id="p2">Mihanz Catering is a food service business that has been serving its clients for 8 years and continues, located at 181 Calderon St.Subic Baliwag ,Bulacan, San Rafael, Philippines, 3010. founded in 2015, the business started through Mr. Antonio Javier’s passion for cooking and his business partner Golando Masi saw it as an opportunity. He offered Antonio Javier, who happened to be his brother- in-law, to finance the business. Antonio agreed and the business started as a small canteen. As a fellow business minded, Mr. Antonio Javier already set his plans and aiming to make a catering which after years of hard work was finally achieved, the business was named after Mirai Javier “Mi” whom is Antonio’s daughter and Yohanz Masi who is the son of Golando both combined to form the now “Mihanz Catering”.</p>
+      </div>
+    <!-- selection -->
+    <div class="selection">
+      <h1 class="display-2 text-center">Things We Offer</h1>
+        <ul>
+          <li><a href="html/Services.html">Services</a></li>
+          <li><a href="html/Menu.html">Menu</a></li>
+          <li><a href="html/Themes.html">Themes</a></li>
+        </ul>
+
+
+
+
     </div>
+
     <!-- Reservation Information -->
     <div class="reservation-Info">
-        <h1>
-            Ready to make your <br/>reservation? 
+        <h1 class="display-4">
+            Ready to make your reservation? 
         </h1>
         <ul>
             <li>Amazing Deals</li>
@@ -121,7 +139,60 @@
         </div>
         
         <div class="calendar">
-        <Calendar/>
+          <table class="table table-dark table-striped text-center">
+            <tr>
+              <th colspan="7">Month/Year</th>
+              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+             <td colspan="7"></td>
+            </tr>
+          </table>
         </div>
         </div>      
     
@@ -135,24 +206,25 @@
 <!-- footer -->
 
 <footer>
-    <h1>
-        Mihanz <br/> Catering
+    <h1 class="display-1 ">
+        Mihanz Catering
     </h1>
 
     <ul>
         <li>
-            <label for="getInTouch">Get in touch</label>
+            <label for="getInTouch" class="h3">Get in touch</label>
             <br/><a href="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer"><FaFacebook/>Facebook</a>
         </li>
         <li>
-            <label for="Contact">Contact</label><br/>
+            <label for="Contact" class="h3">Contact</label><br/>
             <a href="#"> <FaMobileScreen/>0926-563-1143 <br/>
                <FaMobileScreen/> 0916-412-2250</a>
          </li>
          <li>
-            <label for="Location">Location</label> <br/>
+            <label for="Location" class="h3">Location</label> <br/>
             <a href="https://goo.gl/maps/eYMwkLUwLh3tVrsLA" target="_blank" rel="noreferrer"><FaMapLocationDot/> Calderon St. Subic
                 Baliwag, Bulacan</a>
+                
          </li>
             <a href="/ADMIN/Index.html"> Admin</a>
     </ul>
