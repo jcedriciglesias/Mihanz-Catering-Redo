@@ -31,22 +31,181 @@ list-style: none;
 display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 .menu li{
-height: 20vh;
-border: solid 1px ;
-width: 60vh;
-}
-.menu a{
+height: 50vh;
+width: 40vh;
+border-radius: 5px;
+box-shadow: 10px 10px 10px black;
 
 }
+.target{
+    text-decoration: none;
+    color:whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.target:hover{
+    text-decoration: none;
+    color:whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+/* Cover */
 .menu li:nth-child(1){
-    background:linear-gradient(rgb(255,255,255),rgb(255,255,225)), url("/html/menu/porkmenu.jpg"),no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/porkmenu.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(2){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/Beef-And-Broccoli.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(3){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/ChickenPastel.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(4){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/ButteredShrimp.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(5){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/FishFillet.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(6){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/sipo-egg.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(7){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/CharlieChanPasta.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(8){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/CoffeeJelly.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu li:nth-child(9){
+    background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/BlueLemonade.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+/* Hover */
+.menu li:nth-child(1):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/porkmenu.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(2):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/Beef-And-Broccoli.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(3):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/ChickenPastel.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(4):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/ButteredShrimp.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(5):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/FishFillet.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(6):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/sipo-egg.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(7):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/CharlieChanPasta.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(8):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/CoffeeJelly.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:nth-child(9):hover{
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/BlueLemonade.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+/* Menu Page */
+.menu-selection{
+    display: flex;
+}
+.menu-selection ul{
+list-style: none ;
+}
+.menu-selection li{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+.menu-selection h2{
+color: whitesmoke;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.menu-selection li{
+    background: linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 70%)), url(/html/menu/img/babybackribs.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+}
+.menu-selection .modal-body{
+    display: flex;
+    /* background: burlywood; */
+}
+.menu-selection .modal-body .info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
 
-
-
+.menu-selection .modal-body img{
+    width: 50%;
+    box-shadow: 10px 6px 20px black;
+}
 /* Footer */
 footer{
     background-color: black;
