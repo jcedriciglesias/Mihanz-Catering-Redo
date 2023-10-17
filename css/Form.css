@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    scrollbar-gutter: stable;
+}
+main{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/* navigation */
+.navbar-brand{
+    color:green;
+    font-weight: bolder;
+}
+.nav-link{
+    color: black;
+}
+.nav-link .active {
+    color: orangered;
+}
+
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+}
+footer h1{
+    margin: 5%;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer a:hover{
+    color: yellowgreen;
+}
