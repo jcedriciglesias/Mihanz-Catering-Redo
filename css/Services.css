@@ -42,7 +42,10 @@ main{
     background-position: center;
 }
 .Services-Container a:hover{
-    font-size: 60px;
+    align-items: center;
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%));
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 .Services-Container ul{
     margin-top: 100px;
@@ -60,9 +63,9 @@ main{
     display: flex;
     justify-content: center;
     height: 100%;
-    font-weight: bolder;
     font-size:  55px;
     align-items: flex-end;
+    box-shadow: 12px 12px 20px black ;
 }
 
 .Services-Container li{
@@ -70,7 +73,7 @@ main{
     width: 40vh;
     border-radius: 10px;
     background: linear-gradient(75deg, rgba(166, 2, 199, 0.500),rgba(255, 0, 140, 0.500));
-    box-shadow: 12px 12px 20px black ;
+    
 }
 
 /* sub-services container */
