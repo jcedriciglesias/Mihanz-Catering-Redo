@@ -62,11 +62,13 @@ main{
 .selection a{
  text-decoration:none;
  color: snow;
+ border-radius: 10px;
  height: 100%;
  width: 100%;
  display: flex;
  align-items: flex-end;
  justify-content: center;
+ box-shadow: 14px 14px 11px black ;
 }
 .selection ul{
     height: 80%;
@@ -82,10 +84,11 @@ main{
     height: 60vh;
     font-size: 50px;
     border-radius: 10px;
-    box-shadow: 14px 14px 11px black ;
-}.selection li:hover{
-    box-shadow: 14px 14px 11px rgb(255, 255, 255) ;
-    font-size: 60px;
+    
+}.selection a:hover{
+    align-items: center;
+    background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%));
+    box-shadow: 5px 5px 5px rgb(0, 0, 0) ;
 }
 .selection ul li:nth-child(1){
     background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.800)), url("../images/Services.jpg"), no-repeat ;
