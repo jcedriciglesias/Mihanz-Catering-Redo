@@ -1,0 +1,50 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    scrollbar-gutter: stable;
+}
+
+/* navigation */
+.navbar-brand{
+    color:green;
+    font-weight: bolder;
+}
+.nav-link{
+    color: black;
+}
+.nav-link .active {
+    color: orangered;
+}
+/* main */
+a {
+    text-decoration: none;
+    color: white;
+}
+.btn-position{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+/* Dashboard */
+.Dashboard ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Dashboard li{
+    height: 25vh;
+    width:30vh;
+    border: solid 1px ;
+    border-radius: 5px;
+}
+.Dashboard a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+ color: black;
+ text-decoration: none;
+ justify-content: center;
+}
