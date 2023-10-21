@@ -67,7 +67,7 @@
       </nav>
       <main>
         <div>
-          <h1 class="display-1">Pending</h1>
+          <h1 class="display-1 mb-5">Pending</h1>
           <table class="table">
             <thead>
               <tr>
@@ -96,7 +96,7 @@
           </table>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
+          <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Request Detail</h1>
@@ -104,13 +104,87 @@
               </div>
               <div class="modal-body">
                <div>
-                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="row">Name:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Date:</th>
+                      <td><input type="date" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email:</th>
+                      <td><input type="email" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Time:</th>
+                      <td><input type="time" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" >Event Location:</th>
+                      <td colspan="4"><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row" colspan="4" ><h1>Details</h1></td> 
+                    </tr>
+                    <tr>
+                      <th scope="row">Event:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Package Type:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pax:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Budget:</th>
+                      <td><input type="number" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Celebrant Name:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Celebrant Age:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" colspan="4" ><h1>Menu</h1></td> 
+                    </tr>
+                    <tr>
+                      <th scope="row">Pork:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Beef:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chicken:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Fish:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Seafood:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Vegetables:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pasta:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Dessert:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Drink:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
                 
                </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
-                <button type="button" class="btn btn-primary">Accept</button>
+                <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
+                <button type="submit" class="btn btn-primary">Accept</button>
               </div>
             </div>
           </div>
