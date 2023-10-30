@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/Admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/Index.html">Mihan'z Catering</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav nav-tabs ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="../index.html">Dashboard</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Reservation
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../reservation/Pending/index.html">Pending</a></li>
+                      <li><a class="dropdown-item " href="../reservation/Approved/index.html">Approved</a></li>
+                      <li><a class="dropdown-item" href="../reservation/History/index.html">History</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../services/index.html">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="">All</a></li>
+                    <li><a class="dropdown-item " href="menu pages/pork.html">Pork</a></li>
+                    <li><a class="dropdown-item" href="menu pages/beef.html">Beef</a></li>
+                    <li><a class="dropdown-item" href="menu pages/chicken.html">Chicken</a></li>
+                    <li><a class="dropdown-item " href="menu pages/seafood.html">Seafood</a></li>
+                    <li><a class="dropdown-item" href="menu pages/fish.html">Fish</a></li>
+                    <li><a class="dropdown-item" href="menu pages/pasta.html">Pasta</a></li>
+                    <li><a class="dropdown-item " href="menu pages/dessert.html">Dessert</a></li>
+                    <li><a class="dropdown-item" href="menu pages/drinks.html">Drinks</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../themes/index.html">Themes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="../user/index.html">User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href=".html">Logout</a>
+                </li>             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div>
+          <h1 class="display-1 mb-5">Menu</h1>
+          
+          <table class="table">
+            <tbody>
+
+            
+            <tr>
+              <th scope="col">Image</th>
+              <td><input type="file" class="form-control" id="inputGroupFile01"></td>
+            </tr>
+            <tr>
+              <th scope="col">Name</th>
+              <td> <input type="text" class="form-control" placeholder="Dish Name" aria-label="Username" aria-describedby="basic-addon1"></td>
+            </tr>
+            <tr>
+              <th scope="col">Type of Dish</th>
+              <td><select class="form-select" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="1">Pork</option>
+                <option value="2">Beef</option>
+                <option value="3">Chicken</option>
+                <option value="4">Fish</option>
+                <option value="5">Seafood</option>
+                <option value="6">Pasta</option>
+                <option value="7">Dessert</option>
+                <option value="8">Drink</option>
+                
+              </select></td>
+            </tr>
+            <tr>
+              <th scope="col">Description</th>
+              <td><textarea class="form-control" aria-label="With textarea" ></textarea></td>
+            </tr>
+            <tr>
+              <th scope="col">Price</th>
+              <td> <input type="number" class="form-control" placeholder="Price" aria-label="Username" aria-describedby="basic-addon1"></td>
+            </tr>
+            <tr>
+              <th scope="col">Status</th>
+              <td><select class="form-select" id="inputGroupSelect01" aria-placeholder="Status of Dish">
+                <option selected></option>
+                <option value="1">Active</option>
+                <option value="2">Inactive</option>
+                
+                
+              </select></td>
+            </tr>
+            <tr>
+              <th scope="col">Serving</th>
+              <td> <input type="number" class="form-control" placeholder="No. of serving" aria-label="Username" aria-describedby="basic-addon1"></td>
+            </tr>
+          </tbody>
+          
+          </table>
+          <div class="btn-position"> 
+            <button type="submit" class="btn btn-primary "><a href="">Save</a></button>
+          </div>
+
+        </div>
+      </main>
+    
+</body>
+</html>

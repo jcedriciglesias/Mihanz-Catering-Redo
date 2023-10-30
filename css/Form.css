@@ -9,7 +9,7 @@ main{
     justify-content: center;
     flex-direction: column;
     
-    background: linear-gradient(rgba(0,0,0,0.500),rgba(0,0,0,0.500)) , url("../images/mihnazfood.jpg"), no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.500),rgba(0,0,0,0.500)) , url("../images/background4.jpg"), no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }

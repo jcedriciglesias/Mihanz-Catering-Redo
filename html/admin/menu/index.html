@@ -63,11 +63,11 @@
           </div>
         </div>
       </nav>
-      <main>
+<main>
         <div>
           <h1 class="display-1 mb-5">Menu</h1>
           <div class="btn-position"> 
-            <button class="btn btn-primary "><a href="">Add</a></button>
+            <button class="btn btn-primary "><a href="add.html">Add</a></button>
           </div>
           <table class="table">
             <thead>
@@ -75,8 +75,7 @@
                 <th scope="col">Menu ID</th>
                 <th scope="col">Image</th>
                 <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Price</th>
+                <th scope="col">Price</th>          
                 <th scope="col">Serving</th>
                 <th scope="col">Type of Dish</th>
                 <th scope="col"></th>
@@ -85,18 +84,72 @@
             <tbody>
               <tr>
                 <th scope="row">1</th>
+                
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                
                 <td></td>
-                <td></td>
-                <td><button type="button" class="btn btn-primary">View</button>
-                    <button type="button" class="btn btn-secondary">Edit</button></td>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                    <button type="button" class="btn btn-secondary"><a href="edit.html">Edit</a></button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </td>
               </tr>
 
             </tbody>
           </table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Category</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="view">
+          <table class="table">
+              
+            <img src="/images/background4.jpg" alt="" class="img-thumbnail img-menu" >
+              <tr>
+                <th scope="row">Menu ID:</th>
+                <td>1</td>
+              </tr>  
+                
+                <tr>
+                  <th scope="row">Name:</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Description:</th>
+                  <td></td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">Price:</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Status:</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Serving:</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Type of Dish:</th>
+                  <td></td>
+                </tr>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </main>
     

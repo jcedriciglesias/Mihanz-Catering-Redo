@@ -8,35 +8,36 @@ main{
     display: flex;
     height: auto;
    align-items: center;
-    flex-direction: column;
-    /* background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)),url("../images/black.jpg"),no-repeat;
-    background-position: center;
-    
-    background-attachment: fixed;
-    color: white; */
+    flex-direction: column;   
 }
 /* navigation */
 .navbar-brand{
-    color:green;
+    color:white;
     font-weight: bolder;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
 .nav-link .active {
     color: orangered;
+}
+.navbar{
+    background-color: forestgreen;
+}
+.active{
+    
 }
 /* Landing Page */
 .landing_Page{
     width: 100%; 
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.500),rgba(0,0,0,0.500)) , url("../images/mihnazfood.jpg"), no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.500),rgba(0,0,0,0.500)) , url("../images/background4.jpg"), no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .filter{
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     height: 100%;
     width: 100%;
     display: flex;
@@ -48,13 +49,18 @@ main{
 .filter h1{
     margin-bottom: 10%;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: cursive;
     
 }
 /* selection */
 .selection{
     height: 100vh;
     width: 100%;
+    background:url("../images/background.png"),no-repeat;
+    background-position: center;
+    
+   
 }
 .selection h1{
     color: rgb(0, 0, 0);
@@ -69,6 +75,7 @@ main{
  align-items: flex-end;
  justify-content: center;
  box-shadow: 14px 14px 11px black ;
+ 
 }
 .selection ul{
     height: 80%;
