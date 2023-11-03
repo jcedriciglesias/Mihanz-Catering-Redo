@@ -18,15 +18,11 @@ main{
 .nav-link{
     color: white;
 }
-.nav-link .active {
-    color: orangered;
-}
+
 .navbar{
     background-color: forestgreen;
 }
-.active{
-    
-}
+
 /* Landing Page */
 .landing_Page{
     width: 100%; 

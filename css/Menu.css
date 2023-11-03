@@ -14,14 +14,15 @@ main{
 }
 /* Navigation */
 .navbar-brand{
-    color:green;
+    color:white;
     font-weight: bolder;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
-.nav-link .active {
-    color: orangered;
+
+.navbar{
+    background-color: forestgreen;
 }
 /* Menu */
 .menu{

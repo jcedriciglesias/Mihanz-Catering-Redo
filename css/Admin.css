@@ -86,7 +86,14 @@ flex-direction: column;
     display: flex;
     border:solid 1px;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+}
+.calendar-event section{
+    width: 100%;
+    overflow: scroll;
+}
+.section-footer{
+    height: 20%;
 }
 /*  */
 .img-menu{
@@ -95,4 +102,11 @@ flex-direction: column;
 }
 .view{
     display: flex;
+}
+.btn-position-status{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }

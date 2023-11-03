@@ -10,7 +10,7 @@
     <title>Mihan'z Catering | Pre-made Form</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary " >
+    <nav class="navbar navbar-expand-lg " >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mihanz Catering</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,84 +51,194 @@
           Summary
         </h1>
       </div>
-      <div>
-        <table class="table">
-          <thead>
+      <div class="form-container">
+        <!-- Celebrants detail -->
+        <h1 class="display-3 text-center mb-5"> More details</h1>
+        <h1 class="text-start">Celebrant Information</h1>
+        <table>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </td>
+          </tr>
+
             <tr>
-              <th scope="row">Name:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Date:</th>
-              <td><input type="date" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Email:</th>
-              <td><input type="email" class="input-group input-group-text" readonly></td>
-              <th scope="row">Time:</th>
-              <td><input type="time" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row" >Event Location:</th>
-              <td colspan="4"><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row" colspan="4" ><h1>Details</h1></td> 
-            </tr>
-            <tr>
-              <th scope="row">Event:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Package Type:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Pax:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Budget:</th>
-              <td><input type="number" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Celebrant Name:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Celebrant Age:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <td scope="row" colspan="4" ><h1>Menu</h1></td> 
-            </tr>
-            <tr>
-              <th scope="row">Pork:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Beef:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Chicken:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Fish:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Seafood:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Vegetables:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Pasta:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-              <th scope="row">Dessert:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
-            <tr>
-              <th scope="row">Drink:</th>
-              <td><input type="text" class="input-group input-group-text" readonly></td>
-            </tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Venue Address</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </td>
             
-          </tbody>
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Age</span>
+                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" min="0" required>
+              </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Event Theme</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Celebrant Gender</span>
+                <select class="form-select" aria-label="Default select example" required>
+                  <option selected></option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Date of the event</span>
+                <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </td>
+            
+          </tr>
+
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Time of the event</span>
+                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </td>
+            
+          </tr>
+          
         </table>
+        <hr>
+<!-- Menu -->
+        <div class="menu-selection">
+          <h1 class="text-start">Menu</h1>
+          <table>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Pork</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Beef</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Chicken</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Seafood</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Fish</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Vegetable</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Pasta</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Dessert</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Drink</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="btn-position justify-content-end">
+
+        </div>
         
-       </div>
+      </div>
       
             
     </main>

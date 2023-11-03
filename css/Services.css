@@ -27,14 +27,15 @@ main button a{
 }
 /* Navigation */
 .navbar-brand{
-    color:green;
+    color:white;
     font-weight: bolder;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
-.nav-link .active {
-    color: orangered;
+
+.navbar{
+    background-color: forestgreen;
 }
 /* Services-Container */
 .Services-Container{
@@ -43,7 +44,7 @@ main button a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 100px;
 }
 .Services-Container .birthday{
@@ -109,10 +110,6 @@ flex-direction: column;
 width: 100%;
 padding: 0;
 }
-hr {
-    color:black;
-    width: 100%;
-}
 .pre-made li{
     height: auto;
 width: 100%;
@@ -121,15 +118,14 @@ margin-bottom: 100px;
 .title{
     width: 100%;
     height: 15vh;
-    background:lightgray;
-    border-bottom: solid 1px darkgray;
+    backdrop-filter: blur(10px);
 }
 
 .pre-made a{
 text-decoration: none;
 }
 .pre-made a li h1{
-color: black;
+color: white;
 
 }
 .pre-made img{
@@ -141,15 +137,16 @@ box-shadow: 14px 14px 11px black ;
     margin: 50px;
 }
 .pre-made img:hover{
-    box-shadow: 14px 14px 11px rgb(202, 49, 49) ;
-    color: rebeccapurple;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0) ;
+    color: orangered;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 .pre-made a h1:hover{
-    color: rebeccapurple;
+    color: white;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
 
 }
+
 /* Pre-made Form */
 .premade-form{
     display: flex;
@@ -235,8 +232,8 @@ width: 90%;
 /* Terms and condition */
 
 .modal-body{
-    overflow: scroll;
     text-align: justify;
+    color: black;
 }
 
 .modal-body p{
@@ -251,6 +248,7 @@ width: 90%;
 }
 .modal-body li{
     margin: 20px;
+    
 }
 /* Customize */
 .custom-container{
@@ -273,14 +271,36 @@ width: 90%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .option-container{
-    border:solid 1px ;
-height: 40vh;
-width: 30vh;
+height: 350px;
+width: 250px;
 margin:5px;
+background: azure;
+color: black;
+border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.option-container ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+input[type="checkbox"]{
+    
+        height: 30px;
+        width: 20px
 }
 /* selection item */
 
