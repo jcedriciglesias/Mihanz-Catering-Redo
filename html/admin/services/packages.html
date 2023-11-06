@@ -66,11 +66,13 @@
         </div>
       </nav>
       <main>
-        <div>
-          <h1 class="display-1">Packages</h1>
+        <h1 class="display-1">Packages</h1>
           <div class="btn-position"> 
-            <button class="btn btn-primary "><a href="package/add.html">Add</a></button>
+            <!-- <button class="btn btn-primary "><a href="package/add.html">Add</a></button> -->
+            <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#Addpackage">Add</button>
           </div>
+        <section class="Package-section">
+          
           <table class="table">
             <thead>
               <tr>
@@ -88,15 +90,143 @@
                 <td>Birthday</td>
                 <td>50</td>
                 <td>
-                  <button type="button" class="btn btn-primary"><a href="package/edit.html">Edit</a></button>
+                  <!-- <button type="button" class="btn btn-primary" ><a href="package/edit.html">Edit</a></button> -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Editpackage">Edit</button>
                 </td>
               </tr>
               
             </tbody>
             
           </table>
+        </section>
+        <!-- Add Package -->
+        <div class="modal fade" id="Addpackage" tabindex="-1" aria-labelledby="AddpackageLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="AddpackageLabel">Category</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <tr>
+                   
+                   <td>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01"><b>Image</b></label>
+                        <input type="file" class="form-control" id="inputGroupFile01" >
+                      </div>
+                  
+                    </td>
+                   
+                    <td>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><b>Category</b></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected></option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                    </td>
+                    <td>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><b>Pax</b></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected></option>
+                              <option value="1">50</option>
+                              <option value="2">100</option>
+                              <option value="3">150</option>
+                              <option value="3">200</option>
+                              <option value="3">250</option>
+                              <option value="3">300</option>
+                            </select>
+                          </div>
+    
+                    </td>
+                    
+                  </tr>
+                
+                <tbody>
+                  <tr>
+    
+                  </tr>
+                  
+                </tbody>
+                
+              </table>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Add</button>
+              </div>
+            </div>
+          </div>
         </div>
-        
+        <!-- Edit Package -->
+        <div class="modal fade" id="Editpackage" tabindex="-1" aria-labelledby="EditpackageLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="EditpackageLabel">Edit Package</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <tr>
+                   
+                   <td>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01"><b>Image</b></label>
+                        <input type="file" class="form-control" id="inputGroupFile01" >
+                      </div>
+                  
+                    </td>
+                   
+                    <td>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><b>Category</b></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected></option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                    </td>
+                    <td>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><b>Pax</b></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected></option>
+                              <option value="1">50</option>
+                              <option value="2">100</option>
+                              <option value="3">150</option>
+                              <option value="3">200</option>
+                              <option value="3">250</option>
+                              <option value="3">300</option>
+                            </select>
+                          </div>
+    
+                    </td>
+                    
+                  </tr>
+                
+                <tbody>
+                  <tr>
+    
+                  </tr>
+                  
+                </tbody>
+                
+              </table>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     
 </body>

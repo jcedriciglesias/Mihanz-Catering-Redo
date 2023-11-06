@@ -10,7 +10,7 @@
     <title>Mihan'z Catering | Admin</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  " >
+    <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid">
           <a class="navbar-brand" href="/Index.html">Mihan'z Catering</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,8 +66,9 @@
         </div>
       </nav>
       <main>
-        <div>
-          <h1 class="display-1 mb-5">Pending</h1>
+        <h1 class="display-1 ">Pending</h1>
+        
+        <section class="section-pending" >
           <table class="table">
             <thead>
               <tr>
@@ -79,6 +80,7 @@
                 <th scope="col"></th>
               </tr>
             </thead>
+            
             <tbody>
               <tr>
                 <th scope="row">1</th>
@@ -88,20 +90,24 @@
                 <td>Birthday</td>
                 <td>
                   <button type="button" class="btn btn-primary"><a href="status/index.html" class="">Status</a> </button>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view</button>
-                  <button type="button" class="btn btn-secondary"><a href="edit.html" class="">Edit</a> </button>
-                  
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Viewrequestdetail">view</button>
+                  <!-- <button type="button" class="btn btn-secondary"><a href="edit.html" class="">Edit</a> </button> -->
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Editrequestdetail">Edit </button>
                 </td>
               </tr>
+
+
               
             </tbody>
           </table>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        </section>
+        <!-- View Request detail -->
+        <div class="modal fade" id="Viewrequestdetail" tabindex="-1" aria-labelledby="ViewrequestdetailLabel" aria-hidden="true">
           <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Request Detail</h1>
+                <h1 class="modal-title fs-5" id="ViewrequestdetailLabel">Request Detail</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -188,6 +194,165 @@
                 
                 <button type="submit" class="btn btn-primary">Accept</button>
                 <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Edit Request detail -->
+        <div class="modal fade" id="Editrequestdetail" tabindex="-1" aria-labelledby="EditrequestdetailLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="EditrequestdetailLabel">Edit Request Detail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+               <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="row">Name:</th>
+                      <td><input type="text" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Date:</th>
+                      <td><input type="date" class="input-group input-group-text" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email:</th>
+                      <td><input type="email" class="input-group input-group-text" readonly></td>
+                      <th scope="row">Time:</th>
+                      <td><input type="time" class="input-group input-group-text" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" >Event Location:</th>
+                      <td colspan="4"><input type="text" class="input-group input-group-text" ></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row" colspan="4" ><h1>Details</h1></td> 
+                    </tr>
+                    <tr>
+                      <th scope="row">Event:</th>
+                      <td><input type="text" class="input-group input-group-text" ></td>
+                      <th scope="row">Package Type:</th>
+                      <td><input type="text" class="input-group input-group-text" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pax:</th>
+                      <td><input type="text" class="input-group input-group-text" ></td>
+                      <th scope="row">Budget:</th>
+                      <td><input type="number" class="input-group input-group-text" ></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Celebrant Name:</th>
+                      <td><input type="text" class="input-group input-group-text" ></td>
+                      <th scope="row">Celebrant Age:</th>
+                      <td><input type="text" class="input-group input-group-text" ></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" colspan="4" ><h1>Menu</h1></td> 
+                    </tr>
+                    <tr>
+                      <th scope="row">Pork:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                      <th scope="row">Beef:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chicken:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                      <th scope="row">Fish:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Seafood:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                      <th scope="row">Vegetables:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pasta:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                      <th scope="row">Dessert:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Drink:</th>
+                      <td>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                      </td>
+                      
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                
+               </div>
+              </div>
+              <div class="modal-footer">
+                
+                <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
           </div>

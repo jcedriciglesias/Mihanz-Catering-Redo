@@ -66,8 +66,11 @@
         </div>
       </nav>
       <main>
-        <div>
-          <h1 class="display-1 mb-5">Client Status</h1>
+        <h1 class="display-1 mb-5">Client Status</h1>
+        <div class="btn-position-status mb-5"><button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Add</button></div>
+        <div class="status-container">
+          <div class="status-user-info">
+          
           <table class="table">
             
             <tr>
@@ -93,8 +96,9 @@
             </tr>   
             
           </table>
-          <div class="m-5 btn-position-status">
-            <div><button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Add</button></div>
+        </div>
+          <div class="status-call" >
+           
             <table class="table">
                 <thead>
                   <tr>
@@ -119,7 +123,7 @@
           </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Status</h1>

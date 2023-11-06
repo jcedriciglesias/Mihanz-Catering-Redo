@@ -66,8 +66,9 @@
         </div>
       </nav>
       <main>
-        <div>
-          <h1 class="display-1 mb-5">User</h1>
+        <h1 class="display-1">User</h1>
+        <section class="User-section">
+          
           <table class="table">
             <thead>
               <tr>
@@ -75,6 +76,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Contact</th>
+                <th scope="col">Type of user</th>
                 <th scope="col"></th>
               </tr>
             </thead>
@@ -84,6 +86,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td>Admin</td>
                 <td>
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Userdetails">View</button>
                   <!-- <button type="button" class="btn btn-secondary"><a href="edit.html">Edit</a></button> -->
@@ -93,10 +96,10 @@
               
             </tbody>
           </table>
-        </div>
+        </section>
         <!-- View User Details -->
         <div class="modal fade" id="Userdetails" tabindex="-1" aria-labelledby="UserdetailsLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="UserdetailsLabel">User Details</h1>
@@ -145,7 +148,7 @@
         </div>
         <!-- Edit User Details -->
         <div class="modal fade" id="Edituserdetails" tabindex="-1" aria-labelledby="EdituserdetailsLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="EdituserdetailsLabel">Edit User Details</h1>
@@ -178,6 +181,16 @@
                   <tr>
                     <th scope="col">Contact No.</th>
                     <td> <input type="tel" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1"></td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Type of user</th>
+                    <td> 
+                      <select name="" id="">
+                        <option value="" selected>User</option>
+                        <option value="">Admin</option>
+                       
+                      </select>
+                    </td>
                   </tr>
                 </tbody>
                 

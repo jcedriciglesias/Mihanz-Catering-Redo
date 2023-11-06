@@ -64,11 +64,11 @@
         </div>
       </nav>
 <main>
-        <div>
-          <h1 class="display-1 mb-5">Menu</h1>
+  <h1 class="display-1">Menu</h1>
           <div class="btn-position"> 
-            <button class="btn btn-primary "><a href="add.html">Add</a></button>
+            <button class="btn btn-primary"><a href="add.html">Add</a></button>
           </div>
+          <section class="Menu-section">
           <table class="table">
             <thead>
               <tr>
@@ -91,20 +91,23 @@
                 <td></td>
                 
                 <td></td>
-                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                    <button type="button" class="btn btn-secondary"><a href="edit.html">Edit</a></button>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Viewmenu">View</button>
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Viewmenu"><a href="edit.html">Edit</a></button> -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Editmenu">Edit</button>
+
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </td>
               </tr>
 
             </tbody>
           </table>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+        </section>         
+<!--View Menu -->
+<div class="modal fade" id="Viewmenu" tabindex="-1" aria-labelledby="ViewmenuLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Category</h1>
+        <h1 class="modal-title fs-5" id="ViewmenuLabel">Menu</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -150,7 +153,75 @@
     </div>
   </div>
 </div>
-        </div>
+<!-- Edit Menu -->
+<div class="modal fade" id="Editmenu" tabindex="-1" aria-labelledby="EditmenuLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="EditmenuLabel">Edit Menu</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <tbody>
+
+          
+          <tr>
+            <th scope="col">Image</th>
+            <td><input type="file" class="form-control" id="inputGroupFile01"></td>
+          </tr>
+          <tr>
+            <th scope="col">Name</th>
+            <td> <input type="text" class="form-control" placeholder="Dish Name" aria-label="Username" aria-describedby="basic-addon1"></td>
+          </tr>
+          <tr>
+            <th scope="col">Type of Dish</th>
+            <td><select class="form-select" id="inputGroupSelect01">
+              <option selected></option>
+              <option value="1">Pork</option>
+              <option value="2">Beef</option>
+              <option value="3">Chicken</option>
+              <option value="4">Fish</option>
+              <option value="5">Seafood</option>
+              <option value="6">Pasta</option>
+              <option value="7">Dessert</option>
+              <option value="8">Drink</option>
+              
+            </select></td>
+          </tr>
+          <tr>
+            <th scope="col">Description</th>
+            <td><textarea class="form-control" aria-label="With textarea" ></textarea></td>
+          </tr>
+          <tr>
+            <th scope="col">Price</th>
+            <td> <input type="number" class="form-control" placeholder="Price" aria-label="Username" aria-describedby="basic-addon1"></td>
+          </tr>
+          <tr>
+            <th scope="col">Status</th>
+            <td><select class="form-select" id="inputGroupSelect01" aria-placeholder="Status of Dish">
+              <option selected></option>
+              <option value="1">Active</option>
+              <option value="2">Inactive</option>
+              
+              
+            </select></td>
+          </tr>
+          <tr>
+            <th scope="col">Serving</th>
+            <td> <input type="number" class="form-control" placeholder="No. of serving" aria-label="Username" aria-describedby="basic-addon1"></td>
+          </tr>
+        </tbody>
+        
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary ">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
       </main>
     
 </body>

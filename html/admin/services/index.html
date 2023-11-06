@@ -66,11 +66,14 @@
         </div>
       </nav>
       <main>
-        <div>
-          <h1 class="display-1 mb-5">Services</h1>
-          <div class="btn-position"> 
-            <button class="btn btn-primary "><a href="add.html">Add</a></button>
-          </div>
+        <h1 class="display-1">Services</h1>
+        <div class="btn-position"> 
+          <!-- <button class="btn btn-primary "><a href="add.html">Add</a></button> -->
+          <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#Addservices">Add</button>
+        </div>
+        <section class="Services-section">
+          
+          
           <table class="table">
             <thead>
               <tr>
@@ -93,7 +96,38 @@
             </tbody>
             
           </table>
-        </div>
+          <div class="modal fade" id="Addservices" tabindex="-1" aria-labelledby="AddservicesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="AddservicesLabel">Category</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <tr>
+                     <th scope="col">Image</th>
+                     <td>
+                      <input type="file" class="form-control" id="inputGroupFile01">
+                    
+                      </td>
+                      <th scope="col">Category</th>
+                      <td>
+                          <input type="text" name="" id="" class="input-group-text">
+                      </td>
+                      
+                    </tr>
+                  
+                  
+                </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
       </main>
     

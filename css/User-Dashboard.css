@@ -104,7 +104,10 @@ section{
 .section-footer{
     height: 20%;
 }
-
+section thead{
+    position: sticky;
+    top: 0;
+}
 
 
 

@@ -65,9 +65,11 @@
           </div>
         </div>
       </nav>
+      
       <main>
-        <div>
-          <h1 class="display-1 mb-5">Approved</h1>
+        <h1 class="display-1">Approved</h1>
+        <section class="approved-section">
+         
           <table class="table">
             <thead>
               <tr>
@@ -92,10 +94,10 @@
                   <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Editdetails" >Edit</button>
                 </td>
               </tr>
-              
+
             </tbody>
           </table>
-        </div>
+        </section>
         <!-- view -->
         <div class="modal fade" id="Viewdetails" tabindex="-1" aria-labelledby="ViewdetailsLabel" aria-hidden="true">
           <div class="modal-dialog modal-xl modal-dialog-scrollable">
@@ -189,11 +191,12 @@
             </div>
           </div>
         </div>
+        <!-- Edit -->
         <div class="modal fade" id="Editdetails" tabindex="-1" aria-labelledby="EditdetailsLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="EditdetailsLabel">For Edit details</h1>
+                <h1 class="modal-title fs-5" id="EditdetailsLabel">Edit details</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -335,13 +338,29 @@
                         
                       </tr>
                       
+                      
                     </tbody>
                   </table>
                   
                  </div>
               </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary"><a href="">Save</a></button>
+              <div class="modal-footer ">
+                <div class="input-group">
+                  <label class="input-group-text fw-bold" for="inputGroupSelect01">Status</label>
+                  <select class="form-select-sm" id="inputGroupSelect01">
+                    <option selected>Approved</option>
+                    <option value="1">Canceled</option>
+                  </select>
+                  
+                </div>
+                
+                  <button type="submit" class="btn btn-primary">Save</button>
+                
+                
+                
+                
+                
+                
               </div>
             </div>
           </div>
