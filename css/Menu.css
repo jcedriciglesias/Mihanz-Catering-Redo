@@ -7,7 +7,7 @@ main{
     display: flex;
     height: auto;
     flex-direction: column;
-    background:url("../images/background.png"),no-repeat;
+    background:linear-gradient(rgba(0,0,0,0.100),rgba(0,0,0,0.100)) ,url("../images/background.png"),no-repeat;
     background-position: center;
     
     background-attachment: fixed;
