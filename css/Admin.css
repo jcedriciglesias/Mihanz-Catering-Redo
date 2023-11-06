@@ -3,18 +3,23 @@ body{
     display: flex;
     flex-direction: column;
     scrollbar-gutter: stable;
+    background:linear-gradient(rgba(0,0,0,0.100),rgba(0,0,0,0.100)) ,url("../images/background-outline.png"),no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* navigation */
 .navbar-brand{
-    color:green;
+    color:white;
     font-weight: bolder;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
-.nav-link .active {
-    color: orangered;
+
+.navbar{
+    background-color: forestgreen;
 }
 /* main */
 a {
@@ -44,6 +49,7 @@ a {
     border: solid 1px ;
     border-radius: 10px;
     margin: 10px;
+    background: white;
 }
 .Dashboard a{
     display: flex;
@@ -67,24 +73,27 @@ a {
     align-items: center;
 }
 .calendar-container{
-border:solid 1px;
+/* border:solid 1px; */
 height: 100vh;
 width: 50%;
 display: flex;
 flex-direction: column;
+background: white;
+margin: 20px;
 }
 .calendar{
     height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
-    border:solid 1px;
+    /* border:solid 1px; */
+    
 }
 .calendar-event{
     height: 50%;
     width: 100%;
     display: flex;
-    border:solid 1px;
+    /* border:solid 1px; */
     flex-direction: column;
     align-items: center; 
 }

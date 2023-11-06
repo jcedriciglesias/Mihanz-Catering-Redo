@@ -80,7 +80,61 @@
                         
                       </tbody>
                     </table>
-                    <div><button type="button" class="btn btn-primary"><a href="edit.html">Edit</a> </button></div>
+                    <!-- <div><button type="button" class="btn btn-primary">Edit</a> </button></div> -->
+                    <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Edit">Edit</button></div>
+                </div>
+                <div class="modal fade" id="Edit" tabindex="-1" aria-labelledby="EditLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="EditLabel">Edit Information</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>
+                          <table class="table">
+                        
+                            <tr>
+                              <th scope="col">Image</th>
+                              <td>
+                                  <div class="input-group mb-3">
+                                      
+                                      <input type="file" class="form-control" id="inputGroupFile01">
+                                      
+                                    </div>
+                              </td>
+                            </tr>
+                              <tr>
+                                <th scope="col">Name:</th>
+                                <td ><input type="text" name="" id="" class="input-group-text form-control"></td>
+                              </tr>
+                              <tr>
+                                <th scope="col">Address:</th>
+                                <td><input type="text" name="" id="" class="input-group-text form-control"></td>
+                              </tr>
+                              <tr>
+                                <th scope="col">Email:</th>
+                                <td><input type="email" name="" id="" class="input-group-text form-control"></td>
+                              </tr>
+                              <tr>
+                                <th scope="col">Contact No.:</th>
+                                <td><input type="tel" name="" id="" class="input-group-text form-control "></td>
+                              </tr>
+                              
+                            
+                            
+                              
+                            </tbody>
+                          </table>
+                          <div><button type="submit" class="btn btn-primary"> Save</button></div>
+                          
+                         </div>
+                      </div>
+                      <div class="modal-footer">
+                       
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
             <div class="con2" >
@@ -103,55 +157,58 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                         </tbody>
                       </table>
                     </section>
                     <div> <button type="button" class="btn btn-primary"><a href="../Services.html">Create new reservation</a></button>
-                      <button type="button" class="btn btn-primary"><a href="../Menu.html">Check our menu</a></button></div>
+                      <button type="button" class="btn btn-primary"><a href="../Menu.html">Check our menu</a></button>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cancellation">For cancellation</button>
+                      </div>
+                      
                 </div>
                 <div class="con-B">
                     <h1>History</h1>
@@ -172,35 +229,35 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestinformation">View</button></td>
                           </tr>
                           
                         </tbody>
@@ -210,12 +267,12 @@
                     
                 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+<!-- Request Modal -->
+<div class="modal fade" id="requestinformation" tabindex="-1" aria-labelledby="requestinformationLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered  modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Reservation Details</h1>
+        <h1 class="modal-title fs-5" id="requestinformationLabel">Reservation Details</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -295,6 +352,45 @@
               
             </tbody>
           </table>
+          
+         </div>
+      </div>
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cancellation Modal -->
+<div class="modal fade" id="cancellation" tabindex="-1" aria-labelledby="cancellationLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="cancellationLabel">For cancellation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p class="">Kindly contact Mihanz Catering for cancellation of reservation</p>
+          
+         </div>
+      </div>
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Edit" tabindex="-1" aria-labelledby="EditLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="EditLabel">For Edit</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>Kindly contact the Mihanz Catering for Edit of reservation</p>
           
          </div>
       </div>
