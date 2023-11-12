@@ -48,6 +48,7 @@ footer{
 }
 footer h1{
     margin: 5%;
+    margin-bottom: 200px;
 }
 footer ul{
     display: flex;

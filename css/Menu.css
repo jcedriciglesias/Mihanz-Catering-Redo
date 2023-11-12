@@ -173,6 +173,8 @@ box-shadow: 10px 10px 10px black;
 .menu-selection{
     display: flex;
     justify-content: center;
+    height: 100vh;
+    overflow: scroll;
 }
 .menu-selection ul{
 list-style: none ;

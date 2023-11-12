@@ -8,6 +8,9 @@ body{
     background-attachment: fixed;
     background-size: cover;height: 100%;
 }
+h1 {
+    font-family: 'Playfair Display', serif;
+}
 
 /* navigation */
 .navbar-brand{
@@ -52,11 +55,23 @@ section{
 .Dashboard li{
     height: 150px;
     width:200px;
-    border: solid 1px ;
     border-radius: 10px;
     margin: 10px;
     background: white;
+    box-shadow: 10px 10px 20px;
+    border: solid 3px green;
 }
+/* .Dashboard li:nth-child(1){
+    border: solid 3px green;
+}.Dashboard li:nth-child(2){
+    border: solid 3px goldenrod;
+}.Dashboard li:nth-child(3){
+    border: solid 3px orangered;
+}.Dashboard li:nth-child(4){                            
+    border: solid 3px darkcyan;
+}.Dashboard li:nth-child(5){
+    border: solid 3px green;
+} */
 .Dashboard a{
     display: flex;
     font-size: 21px;
@@ -67,9 +82,9 @@ section{
  flex-direction: column;
  align-items: center;
  border-radius: 10px;
- box-shadow: 10px 10px 20px;
+ 
 }
-.Dashboard a:hover{
+.Dashboard li:hover{
     box-shadow: 5px 5px 10px;
 }
 .Dashboard-container{
