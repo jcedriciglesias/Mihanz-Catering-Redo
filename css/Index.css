@@ -22,6 +22,9 @@ main{
 .navbar{
     background-color: forestgreen;
 }
+.title{
+   
+}
 
 /* Landing Page */
 .landing_Page{
@@ -46,7 +49,7 @@ main{
     margin-bottom: 10%;
     font-weight: 600;
     /* text-transform: uppercase; */
-    font-family: cursive;
+    font-family: 'Playfair Display', serif;
     
 }
 /* selection */
@@ -130,6 +133,7 @@ main{
     flex-direction: column;
     align-items: center;
     font-weight: normal;
+    font-family: 'Playfair Display', serif;
 }
 #p2{
     text-align: justify;
@@ -176,6 +180,7 @@ margin: 5%;
     width: 100%;
     justify-content: space-evenly;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 #red{
 color: red;
@@ -196,15 +201,19 @@ footer{
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    justify-content: center;
+    height: 100vh;
+    /* justify-content: center; */
 }
 footer h1{
     margin: 5%;
+    margin-bottom: 200px;
 }
 footer ul{
     display: flex;
     justify-content: space-around;
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
 }
 footer li{
     list-style: none;

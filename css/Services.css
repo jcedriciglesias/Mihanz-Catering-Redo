@@ -318,15 +318,19 @@ footer{
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    justify-content: center;
+    height: 100vh;
+    /* justify-content: center; */
 }
 footer h1{
     margin: 5%;
+    margin-bottom: 200px;
 }
 footer ul{
     display: flex;
     justify-content: space-around;
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
 }
 footer li{
     list-style: none;
