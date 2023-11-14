@@ -173,13 +173,17 @@ box-shadow: 10px 10px 10px black;
 .menu-selection{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    overflow: scroll;
+    height: auto;
+    /* overflow: scroll; */
 }
 .menu-selection ul{
 list-style: none ;
-width: 90%;
-padding: 0;
+width: 100%;
+display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 .menu-selection li{
     width: 50vh;
@@ -202,6 +206,12 @@ align-items: flex-end;
     background-size: cover;
     box-shadow: 11px 11px 20px black;
     cursor: pointer;
+    color: white;
+    display: flex;
+    font-size: 40px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-end;
 }
 .menu-selection .modal-body{
     display: flex;
@@ -216,7 +226,7 @@ align-items: flex-end;
 
 .menu-selection .modal-body img{
     width: 50%;
-    box-shadow: 10px 6px 20px black;
+    /* box-shadow: 10px 6px 20px black; */
 }
 /* Footer */
 footer{
