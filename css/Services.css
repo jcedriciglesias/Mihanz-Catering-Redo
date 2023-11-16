@@ -126,7 +126,7 @@ text-decoration: none;
 }
 .pre-made a li h1{
 color: black;
-text-shadow: 3px 3px 3px rgb(0, 0, 0);
+/* text-shadow: 3px 3px 3px rgb(0, 0, 0); */
 
 }
 .pre-made img{
@@ -307,7 +307,7 @@ input[type="checkbox"]{
 }
 /* selection item */
 .btn-pos{
-    height: 400px;
+    /* height: 400px; */
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -321,15 +321,16 @@ input[type="checkbox"]{
 
 .info{
     backdrop-filter: blur(3px);
-    background: linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 70%)), url(../images/official-background.jpg),no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)), url(../images/official-background.jpg),no-repeat;
     /* background-position: center; */
     background-size: cover;
     height: 65vh;
     width: 100%;
     background-attachment: fixed;
+    color: whitesmoke;
 }
 .info-container{
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     height: 100%;
     width: auto;
 }
@@ -520,7 +521,18 @@ input[type="checkbox"]{
     justify-content: space-evenly;
     padding: 0;
 }
-
+.info-pos{
+    display: flex;
+    justify-content: space-around;
+}
+.foodinfo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.modal-food-info{
+    display: flex;
+}
 
 
 

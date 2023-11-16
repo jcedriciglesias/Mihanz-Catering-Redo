@@ -170,6 +170,10 @@ box-shadow: 10px 10px 10px black;
     box-shadow: 5px 5px 5px black;
 }
 /* Menu Page */
+.info-pos{
+    display: flex;
+    justify-content: space-around;
+}
 .menu-selection{
     display: flex;
     justify-content: center;
@@ -192,14 +196,14 @@ display: flex;
     align-items: center;
     height: 40vh;
 }
-.menu-selection h2{
+/* .menu-selection h2{
 color: whitesmoke;
 height: 100%;
 width: 100%;
 display: flex;
 justify-content: center;
 align-items: flex-end;
-}
+} */
 .menu-selection li{
     background: linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 70%)), url(/html/menu/img/babybackribs.jpg), no-repeat;
     background-position: center;
