@@ -36,12 +36,12 @@ list-style: none;
 display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 0;
 }
 .menu li{
-height: 50vh;
-width: 40vh;
+    height: 350px;
+    width: 250px;
 border-radius: 5px;
 box-shadow: 10px 10px 10px black;
 
@@ -68,7 +68,7 @@ box-shadow: 10px 10px 10px black;
     
 }
 /* Cover */
-.menu li:nth-child(1){
+/* .menu li:nth-child(1){
     background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/porkmenu.jpg), no-repeat;
     background-position: center;
     background-size: cover;
@@ -112,10 +112,10 @@ box-shadow: 10px 10px 10px black;
     background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(/html/menu/img/BlueLemonade.jpg), no-repeat;
     background-position: center;
     background-size: cover;
-}
+} */
 
 /* Hover */
-.menu li:nth-child(1):hover{
+/* .menu li:nth-child(1):hover{
     background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/html/menu/img/porkmenu.jpg), no-repeat;
     background-position: center;
     background-size: cover;
@@ -168,7 +168,7 @@ box-shadow: 10px 10px 10px black;
     background-position: center;
     background-size: cover;
     box-shadow: 5px 5px 5px black;
-}
+} */
 /* Menu Page */
 .info-pos{
     display: flex;
@@ -204,7 +204,34 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 } */
-.menu-selection li{
+.selection-container{
+    height: 350px;
+    width: 250px;
+border-radius: 5px;
+box-shadow: 10px 10px 10px black;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.selection-container img{
+    height: 350px;
+    width: 250px;
+    filter: brightness(0.5);
+    border-radius: 10px;
+}
+.name{
+    position: absolute;
+}
+.selection-container:hover{
+    
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
+
+/* .menu-selection li{
     background: linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 70%)), url(/html/menu/img/babybackribs.jpg), no-repeat;
     background-position: center;
     background-size: cover;
@@ -216,7 +243,7 @@ align-items: flex-end;
     flex-direction: column;
     border-radius: 10px;
     justify-content: flex-end;
-}
+} */
 .menu-selection .modal-body{
     display: flex;
     /* background: burlywood; */
