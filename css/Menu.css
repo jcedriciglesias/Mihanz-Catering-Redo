@@ -43,8 +43,11 @@ display: flex;
     height: 350px;
     width: 250px;
 border-radius: 5px;
-box-shadow: 10px 10px 10px black;
+box-shadow: 15px 15px 20px 1px black;
 
+}
+.menu li:hover{
+    box-shadow: 11px 11px 10px 1px black;
 }
 .target{
     text-decoration: none;
@@ -208,7 +211,7 @@ align-items: flex-end;
     height: 350px;
     width: 250px;
 border-radius: 5px;
-box-shadow: 10px 10px 10px black;
+
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
@@ -223,19 +226,20 @@ align-items: center;
 .name{
     position: absolute;
 }
-.selection-container:hover{
+/* .selection-container:hover{
     
     justify-content: center;
     box-shadow: 10px 10px 10px black;
     
-}
+} */
 
 
 .menu-selection li{
     /* background: linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 70%)), url(/html/menu/img/babybackribs.jpg), no-repeat;
     background-position: center;
     background-size: cover; */
-    box-shadow: 11px 11px 20px black;
+    /* box-shadow: 11px 11px 20px black; */
+    box-shadow: 15px 15px 20px 1px black;
     cursor: pointer;
     color: white;
     display: flex;
@@ -243,6 +247,9 @@ align-items: center;
     flex-direction: column;
     border-radius: 10px;
     justify-content: flex-end;
+}
+.menu-selection li:hover{
+    box-shadow: 11px 11px 10px black;
 }
 .food-info{
 position: absolute;
@@ -258,6 +265,7 @@ position: absolute;
     width: 350px;
     height: 250px;
     border-radius: 10px;
+    filter: brightness(0.5);
 }
 .menu-selection .modal-body{
     display: flex;
