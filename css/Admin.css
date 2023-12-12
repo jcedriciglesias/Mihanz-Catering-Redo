@@ -225,3 +225,8 @@ width: 40%;
     position: sticky;
     top:0;
 }
+/* package */
+.viewpackage{
+    display: flex;
+    flex-direction: column;
+}

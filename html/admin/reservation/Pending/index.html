@@ -99,7 +99,7 @@
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Viewrequestdetail">View</button>
                   <!-- <button type="button" class="btn btn-secondary"><a href="edit.html" class="">Edit</a> </button> -->
                   <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Editrequestdetail">Edit </button>
-                  <button type="button" class="btn btn-danger" >Delete</button>
+                  <button type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#Deleterequestdetail" >Delete</button>
                 </td>
               </tr>
 
@@ -376,6 +376,28 @@
               <div class="modal-footer">
                 
                 <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Delete Request detail -->
+        <div class="modal fade" id="Deleterequestdetail" tabindex="-1" aria-labelledby="DeleterequestdetailLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="DeleterequestdetailLabel">Delete</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="fs-5">
+                  Are you sure you want to delete this package?
+                </div>
+                
+              </div>
+              <div class="modal-footer">
+                
+                <button class=" btn btn-primary">Yes</button>
+                <button class="btn btn-secondary">No</button>
               </div>
             </div>
           </div>
