@@ -186,7 +186,7 @@ box-shadow: 14px 14px 11px black ;
     flex-direction: column;
     margin-top: 100px;
     padding-top: 50px;
-    background-color: rgb(117 117 117 / 69%);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 100px;
     border-radius: 20px;
     box-shadow: 11px 11px 10px black;
@@ -349,7 +349,7 @@ input[type="checkbox"]{
     background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)), url(../images/official-background.jpg),no-repeat;
     /* background-position: center; */
     background-size: cover;
-    height: 65vh;
+    height: 45vh;
     width: 100%;
     background-attachment: fixed;
     color: whitesmoke;
@@ -359,6 +359,7 @@ input[type="checkbox"]{
     height: 100%;
     width: auto;
 }
+
 
 .most-ordered-menu li{
     display: flex;
