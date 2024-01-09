@@ -65,7 +65,7 @@
             <div>
               <p class="fs-4 mb-5 text-center"> Your budget is applicable for 50 guest. <br> Additional guest will be charge 350 pesos per head, <br>Prices will be subject to change. </p>
             </div>
-            <!-- <div><button class="btn btn-primary m-5"><a href="form.html">Proceed</a></button></div> -->
+            <div style="display: flex; justify-content: flex-end;"><button class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Proceed</a></button></div>
             <!-- <div class="input-group mb-3">
               
               <span class="input-group-text" id="basic-addon1">No. of Guest</span>
@@ -77,7 +77,7 @@
               <input type="number" class="form-control" placeholder="Minimum of 18,000" aria-label="Budget" aria-describedby="basic-addon1" min="18000">
             </div> -->
            </div>
-           <h1 class="display-4 m-5"style=" font-family: 'Playfair Display', serif;" >Recommendation</h1>
+           <!-- <h1 class="display-4 m-5"style=" font-family: 'Playfair Display', serif;" >Recommendation</h1>
            <p class="fs-2 mb-5">Please select the option you prefer</p>
            
            <div class="customize-selection">
@@ -131,8 +131,30 @@
               <div><input type="radio" name="Options"></div>
             </div>
            </div>
-           
+            -->
+            
         </div>
+             
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="display-6 fs-3 fw-semibold"> Do you want to proceed?</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"><a href="form.html">Yes</a></button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
         
       </div>
      
