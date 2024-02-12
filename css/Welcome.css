@@ -5,12 +5,8 @@ body{
 }
 main{
     display: flex;
-    height: 100vh;
     flex-direction: column;
-    
-    background: url("../images/background-outline.png"), no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    height: 100vh;
 }
     
 
